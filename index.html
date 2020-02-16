@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="http://www.softwhy.com/" />
+<title>蚂蚁部落</title>
+<style>
+form {
+  max-width: 200px;
+  margin: 0 auto;
+}
+.chrome > input {
+  position: relative;
+  margin-right: 1em;
+  border: 0;
+  background: transparent;
+  color: gold;
+  -webkit-transition: color .8s;
+  transition: color .8s;
+}
+.chrome > input:nth-of-type(1) {
+  display: none;
+}
+.chrome > input:before {
+  position: absolute;
+  content: "★";
+  left: 0;
+  top: 0;
+  font-size: 32px;
+  height: 100%;
+  width: 100%;
+  background: #FFF;
+  cursor: pointer;
+}
+.chrome > input:checked ~ input {
+  color: #666;
+}
+</style>
+</head>
+<body>
+<form>
+  <p class="chrome">
+    <input type="radio" name="a" value="0" checked="checked" />
+    <input type="radio" name="a" value="1" />
+    <input type="radio" name="a" value="2" />
+    <input type="radio" name="a" value="3" />
+    <input type="radio" name="a" value="4" />
+    <input type="radio" name="a" value="5" />
+  </p>
+</form>
+</body>
+</html>
